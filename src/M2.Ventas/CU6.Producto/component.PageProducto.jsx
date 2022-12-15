@@ -22,7 +22,7 @@ export const PageProducto = () => {
   return (
     <div className="containerApp">
       <div className="containerContent">
-        <div className="ProductoPage">
+        <div className="ProveedorPage">
           <h1>Productos</h1>
           <br />
           <br />

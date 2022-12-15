@@ -21,7 +21,7 @@ export const ClientPage = () => {
   return (
     <div className="containerApp">
       <div className="containerContent">
-        <div className="ClientPage">
+        <div className="ProveedorPage">
           <h1>Clientes</h1>
           <br />
           <br />

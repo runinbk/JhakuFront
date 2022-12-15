@@ -22,7 +22,7 @@ export const PageUniMedida = () => {
   return (
     <div className="containerApp">
       <div className="containerContent">
-        <div className="UniMedidaPage">
+        <div className="ProveedorPage">
           <h1>Unidades de Medida</h1>
           <br />
           <br />

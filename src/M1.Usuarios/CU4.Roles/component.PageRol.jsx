@@ -21,7 +21,7 @@ export const PageRol = () => {
   return (
     <div className="containerApp">
       <div className="containerContent">
-        <div className="RolPage">
+        <div className="ProveedorPage">
           <h1>Roles</h1>
           <br />
           <br />

@@ -26,19 +26,9 @@ const App = () => {
   return (
     <div className="containerApp">
       <Navbarf />
-      <ClientContextProvider>
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/clientes" element={<ClientPage />} />
-        </Routes>
-      </ClientContextProvider>
-      <ProveedorContextProvider>
-        <Routes>
-          <Route path="/inventarios" element={<ProveedorPage />} />
-        </Routes>
-      </ProveedorContextProvider>
       <UsuarioProvider>
         <Routes>
+          <Route path="/" element={<Main />} />
           <Route path="/usuarios" element={<PageUsuario />} />
         </Routes>
       </UsuarioProvider>
@@ -52,6 +42,11 @@ const App = () => {
           <Route path="/personal" element={<PageEmpleado />} />
         </Routes>
       </EmpleadoProvider>
+      <ClientContextProvider>
+        <Routes>
+          <Route path="/clientes" element={<ClientPage />} />
+        </Routes>
+      </ClientContextProvider>
       <ProductoContextProvider>
         <Routes>
           <Route path="/producto" element={<PageProducto />} />
@@ -62,6 +57,11 @@ const App = () => {
           <Route path="/pedido" element={<PagePedido />} />
         </Routes>
       </PedidoContextProvider>
+      <ProveedorContextProvider>
+        <Routes>
+          <Route path="/proveedor" element={<ProveedorPage />} />
+        </Routes>
+      </ProveedorContextProvider>
       <MatPrimaContextProvider>
         <Routes>
           <Route path="/matprima" element={<PageMatPrima />} />

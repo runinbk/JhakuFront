@@ -22,7 +22,7 @@ export const PageCompra = () => {
   return (
     <div className="containerApp">
       <div className="containerContent">
-        <div className="CompraPage">
+        <div className="ProveedorPage">
           <h1>Compras</h1>
           <br />
           <br />

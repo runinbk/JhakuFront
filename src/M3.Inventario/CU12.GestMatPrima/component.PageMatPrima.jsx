@@ -22,7 +22,7 @@ export const PageMatPrima = () => {
   return (
     <div className="containerApp">
       <div className="containerContent">
-        <div className="MatPrimaPage">
+        <div className="ProveedorPage">
           <h1>Materias Primas</h1>
           <br />
           <br />

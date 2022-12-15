@@ -15,7 +15,11 @@ const Main = () => {
         <div className="main__title">
           <img src={hello} alt="" />
           <div className="main__greeting">
-            <h1>Sistema para la administracion integral de tu Panaderia</h1>
+            <h1>
+              Sistema de Informacion para gestion de Ventas, Inventario y
+              Produccion
+              <br /> para la Panaderia Jhaku
+            </h1>
             <p>Bienvenido, este es tu tablero de administracion</p>
           </div>
         </div>
@@ -44,7 +48,7 @@ const Main = () => {
               {/* <p className="text-primary-p">Times of Watching</p> */}
               <span>
                 <Link
-                  to="/ventas"
+                  to="/producto"
                   className="font-bold text-title dropdown-item "
                 >
                   Ventas
@@ -59,7 +63,7 @@ const Main = () => {
               {/* <p className="text-primary-p">Number of Videos</p> */}
               <span>
                 <Link
-                  to="/inventarios"
+                  to="/matprima"
                   className="font-bold text-title dropdown-item "
                 >
                   Inventarios
@@ -90,7 +94,7 @@ const Main = () => {
           <div className="charts__left">
             <div className="charts__left__title">
               <div>
-                <h1>Reportes Diarios</h1>
+                <h1>Procesos Diarios</h1>
                 <p>Reportes de Activiades del sistema en este dia</p>
               </div>
               <i className="fas fa-euro-sign"></i>

@@ -21,7 +21,7 @@ export const PagePedido = () => {
   return (
     <div className="containerApp">
       <div className="containerContent">
-        <div className="PedidoPage">
+        <div className="ProveedorPage">
           <h1>Pedidos</h1>
           <br />
           <br />

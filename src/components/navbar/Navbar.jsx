@@ -29,11 +29,10 @@ function Navbarf() {
               placement="end"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title
-                  className="titleNav"
-                  id={`offcanvasNavbarLabel-expand-${expand}`}
-                >
-                  Jhaku - Panaderia
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  <Link to="/" className="titleNav">
+                    Jhaku - Panaderia
+                  </Link>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -58,37 +57,52 @@ function Navbarf() {
                     title="Ventas"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3">
+                    <Link to="/clientes" className="dropdown-item">
                       Clientes
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    </Link>
+
+                    <Link to="/producto" className="dropdown-item">
                       Productos
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">Pedidos</NavDropdown.Item>
+                    </Link>
+
+                    <Link to="/pedido" className="dropdown-item">
+                      Pedidos
+                    </Link>
                   </NavDropdown>
                   <NavDropdown
                     title="Inventario"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
+                    <Link to="/proveedor" className="dropdown-item">
+                      Proveedor
+                    </Link>
+
+                    <Link to="/matprima" className="dropdown-item">
+                      Maetria Prima
+                    </Link>
+
+                    <Link to="/unidadmedida" className="dropdown-item">
+                      Unidad de Medida
+                    </Link>
+                    <Link to="/compra" className="dropdown-item">
+                      Compra de Materia Prima
+                    </Link>
                   </NavDropdown>
                   <NavDropdown
                     title="Processos"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
+                    {/* <Link to="/usuarios" className="dropdown-item">
+                      Usuarios
+                    </Link>
+
+                    <Link to="/roles" className="dropdown-item">
+                      Roles
+                    </Link>
+
+                    <Link to="/personal" className="dropdown-item">
+                      Personal
+                    </Link> */}
                   </NavDropdown>
                 </Nav>
                 {/* <Form className="d-flex">
