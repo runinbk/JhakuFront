@@ -1,0 +1,47 @@
+.ProveedorPage {
+  text-align: center;
+}
+
+.ProveedorPage-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Table {
+  background-color: #282c34;
+}
+
+.Columna {
+  background-color: #636569;
+  text-decoration-color: azure;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ProveedorPage-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.ProveedorPage-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.ProveedorPage-link {
+  color: #61dafb;
+}
+
+@keyframes ProveedorPage-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
