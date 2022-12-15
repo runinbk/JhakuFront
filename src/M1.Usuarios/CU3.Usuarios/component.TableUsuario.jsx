@@ -1,7 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { useUsuario } from "./Usuario.provider";
+
+import { Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
+import { useState } from "react";
 
 export const ProveedorTable = ({ usuario }) => {
+  const [modalEliminar, setModalEliminar] = useState(false);
+  const { deleteUsuario } = useUsuario();
+
   return (
     <>
       <tr>
@@ -24,33 +31,33 @@ export const ProveedorTable = ({ usuario }) => {
           <button
             className="btn btn-danger"
             onClick={() => {
-              // this.seleccionarEmpresa(empresa);
-              // this.setState({ modalEliminar: true });
+              setModalEliminar(true);
             }}
           >
             <FontAwesomeIcon icon={faTrashAlt} />
           </button>
         </td>
       </tr>
-      {/* <Modal isOpen={this.state.modalEliminar}>
-          <ModalBody>
-            Estás seguro que deseas eliminar a al proveedor {$``}
-          </ModalBody>
-          <ModalFooter>
-            <button
-              className="btn btn-danger"
-              onClick={() => this.peticionDelete()}
-            >
-              Sí
-            </button>
-            <button
-              className="btn btn-secundary"
-              onClick={() => this.setState({ modalEliminar: false })}
-            >
-              No
-            </button>
-          </ModalFooter>
-        </Modal> */}
+      <Modal isOpen={modalEliminar}>
+        <ModalBody>Estás seguro que deseas eliminar a al Usuario</ModalBody>
+        <ModalFooter>
+          <button
+            className="btn btn-danger"
+            onClick={() => {
+              deleteUsuario(usuario.id);
+              setModalEliminar(false);
+            }}
+          >
+            Sí
+          </button>
+          <button
+            className="btn btn-secundary"
+            onClick={() => setModalEliminar(false)}
+          >
+            No
+          </button>
+        </ModalFooter>
+      </Modal>
     </>
   );
 };

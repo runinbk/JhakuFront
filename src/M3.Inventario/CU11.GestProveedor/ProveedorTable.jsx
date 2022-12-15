@@ -1,9 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
-
 import { Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
+import { useState } from "react";
+import { useProveedor } from "./ProveedorProvider";
 
 export const ProveedorTable = ({ proveedor }) => {
+  const [modalEliminar, setModalEliminar] = useState(false);
+  const { deleteProveedor } = useProveedor();
   return (
     <>
       <tr>
@@ -26,33 +29,33 @@ export const ProveedorTable = ({ proveedor }) => {
           <button
             className="btn btn-danger"
             onClick={() => {
-              // this.seleccionarEmpresa(empresa);
-              // this.setState({ modalEliminar: true });
+              setModalEliminar(true);
             }}
           >
             <FontAwesomeIcon icon={faTrashAlt} />
           </button>
         </td>
       </tr>
-      {/* <Modal isOpen={this.state.modalEliminar}>
-        <ModalBody>
-          Estás seguro que deseas eliminar a al proveedor {$``}
-        </ModalBody>
+      <Modal isOpen={modalEliminar}>
+        <ModalBody>Estás seguro que deseas eliminar a al proveedor</ModalBody>
         <ModalFooter>
           <button
             className="btn btn-danger"
-            onClick={() => this.peticionDelete()}
+            onClick={() => {
+              deleteProveedor(proveedor.id);
+              setModalEliminar(false);
+            }}
           >
             Sí
           </button>
           <button
             className="btn btn-secundary"
-            onClick={() => this.setState({ modalEliminar: false })}
+            onClick={() => setModalEliminar(false)}
           >
             No
           </button>
         </ModalFooter>
-      </Modal> */}
+      </Modal>
     </>
   );
 };
