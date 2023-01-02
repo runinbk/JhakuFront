@@ -28,53 +28,53 @@ const App = () => {
       <Navbarf />
       <UsuarioProvider>
         <Routes>
-          <Route path="./" element={<Main />} />
-          <Route path="./usuarios" element={<PageUsuario />} />
+          <Route path="JhakuFront/" element={<Main />} />
+          <Route path="JhakuFront/usuarios" element={<PageUsuario />} />
         </Routes>
       </UsuarioProvider>
       <RolProvider>
         <Routes>
-          <Route path="./roles" element={<PageRol />} />
+          <Route path="JhakuFront/roles" element={<PageRol />} />
         </Routes>
       </RolProvider>
       <EmpleadoProvider>
         <Routes>
-          <Route path="./personal" element={<PageEmpleado />} />
+          <Route path="JhakuFront/personal" element={<PageEmpleado />} />
         </Routes>
       </EmpleadoProvider>
       <ClientContextProvider>
         <Routes>
-          <Route path="./clientes" element={<ClientPage />} />
+          <Route path="JhakuFront/clientes" element={<ClientPage />} />
         </Routes>
       </ClientContextProvider>
       <ProductoContextProvider>
         <Routes>
-          <Route path="./producto" element={<PageProducto />} />
+          <Route path="JhakuFront/producto" element={<PageProducto />} />
         </Routes>
       </ProductoContextProvider>
       <PedidoContextProvider>
         <Routes>
-          <Route path="./pedido" element={<PagePedido />} />
+          <Route path="JhakuFront/pedido" element={<PagePedido />} />
         </Routes>
       </PedidoContextProvider>
       <ProveedorContextProvider>
         <Routes>
-          <Route path="./proveedor" element={<ProveedorPage />} />
+          <Route path="JhakuFront/proveedor" element={<ProveedorPage />} />
         </Routes>
       </ProveedorContextProvider>
       <MatPrimaContextProvider>
         <Routes>
-          <Route path="./matprima" element={<PageMatPrima />} />
+          <Route path="JhakuFront/matprima" element={<PageMatPrima />} />
         </Routes>
       </MatPrimaContextProvider>
       <UniMedidaContextProvider>
         <Routes>
-          <Route path="./unidadmedida" element={<PageUniMedida />} />
+          <Route path="JhakuFront/unidadmedida" element={<PageUniMedida />} />
         </Routes>
       </UniMedidaContextProvider>
       <CompraContextProvider>
         <Routes>
-          <Route path="./compra" element={<PageCompra />} />
+          <Route path="JhakuFront/compra" element={<PageCompra />} />
         </Routes>
       </CompraContextProvider>
     </div>
