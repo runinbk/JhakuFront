@@ -33,7 +33,7 @@ const Main = () => {
               {/* <p className="text-primary-p">Number of Subscribers</p> */}
               <span>
                 <Link
-                  to="/usuarios"
+                  to="./usuarios"
                   className="font-bold text-title dropdown-item "
                 >
                   Usuarios
@@ -48,7 +48,7 @@ const Main = () => {
               {/* <p className="text-primary-p">Times of Watching</p> */}
               <span>
                 <Link
-                  to="/producto"
+                  to="./producto"
                   className="font-bold text-title dropdown-item "
                 >
                   Ventas
@@ -63,7 +63,7 @@ const Main = () => {
               {/* <p className="text-primary-p">Number of Videos</p> */}
               <span>
                 <Link
-                  to="/matprima"
+                  to="./matprima"
                   className="font-bold text-title dropdown-item "
                 >
                   Inventarios
@@ -78,7 +78,7 @@ const Main = () => {
               {/* <p className="text-primary-p">Number of Likes</p> */}
               <span>
                 <Link
-                  to="/procesos"
+                  to="./procesos"
                   className="font-bold text-title dropdown-item "
                 >
                   Procesos

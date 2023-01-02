@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const url = "http://proyectosi1-production-1c08.up.railway.app/proveedor";
+// const url = "http://proyectosi1-production-1c08.up.railway.app/proveedor";
+const url =
+  "https://nodejs-mysql-railway-production-9c0c.up.railway.app/proveedor";
 
 export const createProveedorRequest = (newCliente) =>
   axios.post(url, newCliente); // POST

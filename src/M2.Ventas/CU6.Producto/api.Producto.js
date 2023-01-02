@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const url = "http://proyectosi1-production-1c08.up.railway.app/producto";
-// const url =
-// "https://nodejs-mysql-railway-production-9c0c.up.railway.app/producto";
+// const url = "http://proyectosi1-production-1c08.up.railway.app/producto";
+const url =
+  "https://nodejs-mysql-railway-production-9c0c.up.railway.app/producto";
 
 export const createProductoRequest = (newProducto) =>
   axios.post(url, newProducto); // POST
