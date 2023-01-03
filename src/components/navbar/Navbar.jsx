@@ -18,7 +18,7 @@ function Navbarf() {
         >
           <Container className="containerApp">
             <Navbar.Brand>
-              <Link to="/" className="titleNav">
+              <Link to="/JhakuFront/" className="titleNav">
                 Jhaku - Panaderia
               </Link>
             </Navbar.Brand>
@@ -30,7 +30,7 @@ function Navbarf() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  <Link to="/" className="titleNav">
+                  <Link to="/JhakuFront/" className="titleNav">
                     Jhaku - Panaderia
                   </Link>
                 </Offcanvas.Title>
