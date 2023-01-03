@@ -41,15 +41,15 @@ function Navbarf() {
                     title="Usuarios"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <Link to="/usuarios" className="dropdown-item">
+                    <Link to="/JhakuFront/usuarios" className="dropdown-item">
                       Usuarios
                     </Link>
 
-                    <Link to="/roles" className="dropdown-item">
+                    <Link to="/JhakuFront/roles" className="dropdown-item">
                       Roles
                     </Link>
 
-                    <Link to="/personal" className="dropdown-item">
+                    <Link to="/JhakuFront/personal" className="dropdown-item">
                       Personal
                     </Link>
                   </NavDropdown>
@@ -57,15 +57,15 @@ function Navbarf() {
                     title="Ventas"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <Link to="/clientes" className="dropdown-item">
+                    <Link to="/JhakuFront/clientes" className="dropdown-item">
                       Clientes
                     </Link>
 
-                    <Link to="/producto" className="dropdown-item">
+                    <Link to="/JhakuFront/producto" className="dropdown-item">
                       Productos
                     </Link>
 
-                    <Link to="/pedido" className="dropdown-item">
+                    <Link to="/JhakuFront/pedido" className="dropdown-item">
                       Pedidos
                     </Link>
                   </NavDropdown>
@@ -73,18 +73,21 @@ function Navbarf() {
                     title="Inventario"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <Link to="/proveedor" className="dropdown-item">
+                    <Link to="/JhakuFront/proveedor" className="dropdown-item">
                       Proveedor
                     </Link>
 
-                    <Link to="/matprima" className="dropdown-item">
+                    <Link to="/JhakuFront/matprima" className="dropdown-item">
                       Maetria Prima
                     </Link>
 
-                    <Link to="/unidadmedida" className="dropdown-item">
+                    <Link
+                      to="/JhakuFront/unidadmedida"
+                      className="dropdown-item"
+                    >
                       Unidad de Medida
                     </Link>
-                    <Link to="/compra" className="dropdown-item">
+                    <Link to="/JhakuFront/compra" className="dropdown-item">
                       Compra de Materia Prima
                     </Link>
                   </NavDropdown>
